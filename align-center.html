@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>水平居中</title>
+        <style>
+            body, p, ul {
+                margin: 0;
+                padding: 0;
+            }
+            .center-text {
+                text-align: center;
+            }
+            .center-block {
+                margin: 0 auto;
+            }
+            .inline-block-container {
+                text-align: center;
+            }
+            .inline-block-container li {
+                display: inline-block;
+                width: 60px;
+                background-color: red;
+                color: #fff;
+            }
+            ul.flex-center {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+            }
+            ul.flex-center li {
+                width: 60px;
+                background-color: blue;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center-text" style="width: 100%; background-color: red; color: #fff;">inline element</div>
+        <br>
+
+        <div class="center-text" style="width: 100%; background-color: blue; color: #fff;">
+            <p style="display: inline-block; width: 160px; height: 60px; background-color: red; color: #fff;">block element</p>
+        </div>
+        <br>
+
+        <div class="center-block" style="width: 120px; height: 60px; background-color: green; color: #fff;">block element</div>
+        <br>
+
+        <ul class="inline-block-container">
+            <li>block element</li>
+            <li>block element/block element</li>
+            <li>block element/block element/block element</li>
+        </ul>
+        <br>
+
+        <ul class="flex-center">
+            <li>block element</li>
+            <li>block element/block element</li>
+            <li>block element/block element/block element</li>
+        </ul>
+    </body>
+</html>
