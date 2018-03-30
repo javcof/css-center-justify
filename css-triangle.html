@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CSS 实现三角形</title>
+        <style>
+            .triangle {
+                width: 200px;
+                height: 200px;
+                /*background-color: blue;*/
+
+                border: 50px solid rgba(0,0,0,0);
+
+                width: 0;
+                height: 0;
+            }
+
+            .triangle-top {
+                border-top: 50px solid green;
+            }
+            .triangle-right {
+                border-right: 50px solid green;
+            }
+            .triangle-bottom {
+                border-bottom: 50px solid green;
+            }
+            .triangle-left {
+                border-left: 50px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="triangle triangle-bottom"></div>
+        <div class="triangle triangle-left"></div>
+        <div class="triangle triangle-right"></div>
+        <div class="triangle triangle-top"></div>
+    </body>
+</html>
